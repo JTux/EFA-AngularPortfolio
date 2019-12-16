@@ -21,7 +21,9 @@
 	scroll-behavior: smooth;
 }
 
-.side-nav {
-	border: none;
-	background-color: var(--primary-bg-color);
+@media only screen and (max-width: 600px) {
+	.side-nav {
+		background-color: var(--primary-bg-color);
+		border: none;
+	}
 }
