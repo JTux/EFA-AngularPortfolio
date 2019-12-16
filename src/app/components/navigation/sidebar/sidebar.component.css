@@ -5,3 +5,7 @@
 .sn-brand {
 	text-align: center;
 }
+
+.active-page {
+	color: red;
+}

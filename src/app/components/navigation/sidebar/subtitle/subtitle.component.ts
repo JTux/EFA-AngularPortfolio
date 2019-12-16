@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Subtitle } from 'src/app/models/subtitle';
 
 @Component({
@@ -8,19 +8,13 @@ import { Subtitle } from 'src/app/models/subtitle';
 })
 export class SubtitleComponent implements OnInit {
 
-  subtitles: Subtitle[] = [
-    { text: 'Teacher' },
-    { text: 'Problem Solver' },
-    { text: 'Lifelong Student' },
-    { text: '.NET Developer' },
-    { text: 'Curriculum Manager' }
-  ];
+  @Input() subtitleArray: Subtitle[];
 
   constructor() {
-    this.shuffleArray(this.subtitles);
   }
 
   ngOnInit() {
+    this.shuffleArray(this.subtitleArray);
   }
 
   private shuffleArray<T>(array: Array<T>) {
