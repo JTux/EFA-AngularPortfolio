@@ -1,24 +1,50 @@
 .sn-header {
 	font-size: 1vw;
-	background-color: #656565;
+	background-color: var(--primary-bg-color);
+	margin-bottom: .375em;
+	color: white;
 }
 
 .sn-brand {
 	text-align: center;
+	font-size: 1.75vw;
+	margin: .5em 0 0 0;
 }
 
-.nav-buttons {
+.sn-item-area {
 	flex: 1;
 }
 
+.sn-buttons {
+	display: flex;
+	flex-direction: column;
+	align-content: stretch;
+	height: 100%;
+	color: var(--accent);
+}
+
+.sn-item {
+	flex: 1;
+	text-align: center;
+	position: relative;
+	padding: .375em .75em;
+}
+
 .active-page {
-	color: red;
+	color: var(--primary-text);
+}
+
+.active-page >>> .sn-item-container {
+	border-color: var(--accent);
+	background-color: var(--accent);
+	color: white;
 }
 
 .sn-footer {
+	margin-top: .375em;
 	height: 2.5em;
 	width: 100%;
-	background-color: #656565;
+	background-color: var(--accent);
 	position: relative;
-	color: rgba(255, 255, 255, .5);
+	color: white;
 }

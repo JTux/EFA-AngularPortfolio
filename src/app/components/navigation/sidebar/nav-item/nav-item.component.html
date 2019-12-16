@@ -1,3 +1,5 @@
-<div *ngIf="navItem" (click)="setActiveItem(navItem.id);">
-	{{ navItem.text }}
+<div class="sn-item-container" *ngIf="navItem" (click)="setActiveItem(navItem.id);">
+	<div class="center sn-text">
+		{{ navItem.text }}
+	</div>
 </div>

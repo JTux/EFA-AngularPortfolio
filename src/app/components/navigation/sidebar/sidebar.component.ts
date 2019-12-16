@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Subtitle } from 'src/app/models/subtitle';
-import { SideNavItem } from 'src/app/models/sideNavItem';
+import { SideNavItem, NavRouteItem } from 'src/app/models/sideNavItem';
 import { element } from 'protractor';
 
 @Component({
@@ -18,17 +18,25 @@ export class SidebarComponent implements OnInit {
     { text: 'Curriculum Manager' }
   ];
 
-  navItems: SideNavItem[] = [
-    { id: 1, text: 'First', active: false, icon: 'home' },
-    { id: 2, text: 'Second', active: false, icon: 'home' },
-    { id: 3, text: 'Third', active: false, icon: 'home' },
-    { id: 4, text: 'Fourth', active: false, icon: 'home' },
-    { id: 5, text: 'Fifth', active: false, icon: 'home' }
-  ];
-
+  navItems: SideNavItem[] = [];
   activeItem: number;
 
-  constructor() { }
+  private navOptions: NavRouteItem[] = [
+    { text: 'Home', route: '' },
+    { text: 'Technical & Code Related Skills', route: '' },
+    { text: 'Teaching & Classroom Management', route: '' },
+    { text: 'EFA Curriculum & Classroom Resources', route: '' },
+    { text: 'Success Stories & Other Feedback', route: '' },
+    { text: 'Contributions to Excellence', route: '' },
+    { text: 'More About Me', route: '' }
+  ];
+
+  constructor() {
+    this.navOptions.forEach(routeItem => {
+      let itemCount = this.navItems.length;
+      itemCount = this.navItems.push({ id: itemCount + 1, text: routeItem.text, active: false, route: routeItem.route });
+    });
+  }
 
   ngOnInit() {
   }
