@@ -2,12 +2,12 @@
 	<h1 class="sn-brand">Joshua L Tucker</h1>
 	<app-subtitle [subtitleArray]="subtitles"></app-subtitle>
 </header>
+
 <div class="nav-buttons">
 	<div *ngFor="let item of navItems">
 		<sidenav-item [ngClass]="{'active-page': activeItem === item.id}" [navItem]="item"
 			(setActive)="updateActiveItem($event)"></sidenav-item>
 	</div>
 </div>
-<footer>
 
-</footer>
+<sidenav-footer class="sn-footer"></sidenav-footer>

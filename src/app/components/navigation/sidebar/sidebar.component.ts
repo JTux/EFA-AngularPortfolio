@@ -35,9 +35,5 @@ export class SidebarComponent implements OnInit {
 
   private updateActiveItem(event: string) {
     this.activeItem = parseInt(event);
-
-    
-    console.log(event)
-
   }
 }
