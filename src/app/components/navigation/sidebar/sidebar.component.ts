@@ -40,7 +40,7 @@ export class SidebarComponent implements OnInit {
   ngOnInit() {
   }
 
-  private updateActiveItem(event: string) {
+  updateActiveItem(event: string) {
     this.activeItem = parseInt(event);
     console.log(this.activeItem)
   }
