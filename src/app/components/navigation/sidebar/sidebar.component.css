@@ -3,12 +3,17 @@
 	background-color: var(--primary-bg-color);
 	margin-bottom: .375em;
 	color: white;
+	position: relative;
 }
 
 .sn-brand {
 	text-align: center;
 	font-size: 1.75vw;
 	margin: .5em 0 0 0;
+}
+
+.sn-initials {
+	display: none;
 }
 
 .sn-item-area {
@@ -34,7 +39,7 @@
 	color: var(--primary-text);
 }
 
-.active-page >>> .sn-item-container {
+.active-page>>>.sn-item-container {
 	border-color: var(--accent);
 	background-color: var(--accent);
 	color: white;
@@ -47,4 +52,32 @@
 	background-color: var(--accent);
 	position: relative;
 	color: white;
+}
+
+@media only screen and (max-width: 600px) {
+	.sn-header {
+		padding-top: 2.75em;
+		border: none;
+	}
+	.sn-logo-container {
+		height: 6vh;
+	}
+	.sn-initials {
+		width: 100%;
+		text-align: center;
+		display: block;
+		font-size: 10em;
+		font-weight: 100;
+	}
+	.sn-item {
+		margin: .275em auto;
+		padding: 0;
+		width: 85%;
+	}
+	.sn-brand, .sn-header>>>.sn-subtitle, .sn-item>>>.sn-text {
+		display: none;
+	}
+	.sn-item>>>.sn-item-container {
+		width: 95%;
+	}
 }

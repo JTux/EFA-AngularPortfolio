@@ -6,7 +6,7 @@
 	position: fixed;
 	display: flex;
 	flex-direction: column;
-	border-right: 1px solid black;
+	border-right: 2px solid var(--accent);
 	background-color: #80808080;
 }
 
@@ -19,4 +19,9 @@
 	right: 0;
 	overflow-y: scroll;
 	scroll-behavior: smooth;
+}
+
+.side-nav {
+	border: none;
+	background-color: var(--primary-bg-color);
 }
