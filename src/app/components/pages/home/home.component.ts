@@ -7,8 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  htmlContent = '<h1>Hey</h1>';
-
   pageTitle: string;
   pageSubtitle: string;
   headParagraphs: string[];

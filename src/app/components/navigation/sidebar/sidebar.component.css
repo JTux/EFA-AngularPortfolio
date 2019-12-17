@@ -39,6 +39,7 @@
 
 .active-page {
 	color: var(--primary-text);
+	text-decoration: underline;
 }
 
 .active-page>>>.sn-item-container, .active-page>>>.sn-item-container:active {
@@ -82,5 +83,6 @@
 	}
 	.sn-item>>>.sn-item-container {
 		width: 95%;
+		margin: auto;
 	}
 }
