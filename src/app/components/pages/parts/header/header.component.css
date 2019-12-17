@@ -1,5 +1,4 @@
 .page-header {
-	height: 100vh;
 	max-height: 100%;
 	padding: 0 1.5em;
 	display: flex;
@@ -8,14 +7,23 @@
 }
 
 .page-header h1, .page-header h2 {
-	margin: 0;
+	margin: .25em 0;
 	text-align: center;
+}
+
+.page-header h1 {
+	font-size: 2.5rem;
+}
+
+.page-header h2 {
+	font-size: 1.5rem;
 }
 
 .page-header hr {
 	width: 100%;
 	border-color: var(--accent-transparent);
 	border-style: solid;
+	border-top: none;
 }
 
 .page-titles {
@@ -24,12 +32,14 @@
 
 .page-description {
 	flex: 1;
+	text-align: center;
 }
 
 .nav-arrow {
 	position: relative;
 	min-height: 2em;
 	background-color: rgba(255, 255, 255, .75);
+	padding-bottom: 2.5em;
 }
 
 .down-arrow-link {

@@ -20,8 +20,8 @@ export class HomeComponent implements OnInit {
   }
 
   private setParagraphs(): string[] {
-    this.pageTitle = '';
-    this.pageSubtitle = '';
+    this.pageTitle = 'Page Title';
+    this.pageSubtitle = 'Page Subtitle';
 
     let textArray: string[] = [
       'This is my first paragraph.',

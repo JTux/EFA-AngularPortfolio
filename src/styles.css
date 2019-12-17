@@ -1,12 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+
 @import url('./colors.css');
+@font-face {
+	font-family: 'Gotham';
+	src: url('./assets/Gotham-Bold.otf') format('opentype');
+}
+
+* {
+	outline: 0;
+	box-shadow: none !important;
+}
 
 html {
 	scroll-behavior: smooth;
 }
 
 body {
-	font-family: 'Orienta', sans-serif;
+	font-family: 'Overpass', 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Gotham', 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: bold;
 }
 
 .center {

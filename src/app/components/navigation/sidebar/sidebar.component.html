@@ -9,7 +9,7 @@
 <div class="sn-item-area">
 	<div class="sn-buttons">
 		<sidenav-item class="sn-item" *ngFor="let item of navItems" [ngClass]="{'active-page': activeItem === item.id}"
-			[navItem]="item" (setActive)="updateActiveItem($event)">
+			[navItem]="item" (setActive)="updateActivePage($event)">
 		</sidenav-item>
 	</div>
 </div>

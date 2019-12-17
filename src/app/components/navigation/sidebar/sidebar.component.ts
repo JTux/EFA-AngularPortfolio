@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Subtitle } from 'src/app/models/subtitle';
 import { SideNavItem, NavRouteItem } from 'src/app/models/sideNavItem';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-sidebar',
@@ -30,17 +31,27 @@ export class SidebarComponent implements OnInit {
     { text: 'More About Me', route: '', icon: 'fas fa-user' }
   ];
 
-  constructor() {
+  constructor(private router: Router) {
     this.navOptions.forEach(routeItem => {
       let itemCount = this.navItems.length;
       itemCount = this.navItems.push({ id: itemCount + 1, text: routeItem.text, active: false, route: routeItem.route, icon: routeItem.icon });
+      if (routeItem.route == router.url) {
+        this.updateActiveItem(itemCount);
+      }
     });
   }
 
   ngOnInit() {
   }
 
-  updateActiveItem(event: string) {
-    this.activeItem = parseInt(event);
+  updateActiveItem(itemId: number) {
+    this.activeItem = itemId;
+  }
+
+  updateActivePage(itemId: string) {
+    let newPage = this.navItems.find((item) => item.id === parseInt(itemId));
+    this.router.navigate([newPage.route]).then(() => {
+      this.updateActiveItem(parseInt(itemId));
+    });
   }
 }

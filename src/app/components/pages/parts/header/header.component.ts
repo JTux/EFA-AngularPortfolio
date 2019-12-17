@@ -7,10 +7,29 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  @Input() headerText: string;
-  @Input() subtitle: string;
+  title: string;
+  sub: string;
+
+  get headerText(): string {
+    return this.title;
+  }
+
+  @Input('headerText')
+  set headerText(value: string) {
+    this.title = value.toUpperCase();
+  }
+
+  get subtitle(): string {
+    return this.sub;
+  }
+
+  @Input('subtitle')
+  set subtitle(value: string) {
+    this.sub = value.toUpperCase();
+  }
+
   @Input() paragraphs: string[];
-  
+
   constructor() { }
 
   ngOnInit() {

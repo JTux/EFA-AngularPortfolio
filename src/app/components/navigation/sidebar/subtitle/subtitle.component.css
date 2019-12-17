@@ -1,7 +1,3 @@
-.sn-subtitle {
-	padding-bottom: 5px;
-}
-
 .subtitle-wrapper {
 	padding-top: 5px;
 	overflow: hidden;
@@ -49,24 +45,6 @@
 .subtitle {
 	width: 100%;
 	text-align: center;
-}
-
-@keyframes progress {
-	0% {
-		opacity: 1;
-		width: 0%;
-	}
-	45%, 50% {
-		width: 100%;
-	}
-	75% {
-		opacity: 0;
-		width: 0px;
-	}
-	100% {
-		opacity: 1;
-		width: 0;
-	}
 }
 
 @keyframes first-item {

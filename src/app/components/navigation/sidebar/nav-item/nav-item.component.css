@@ -1,12 +1,17 @@
 .sn-item-container {
 	width: 100%;
 	height: 100%;
-	border: solid 1px var(--primary-bg-color);
+	/* border: solid 1px var(--accent); */
 	background-color: white;
+	cursor: pointer;
+}
+
+.sn-item-container:active {
+	color: black;
 }
 
 .sn-text {
-	width: 97%;
+	width: 90%;
 	position: relative;
 	font-size: 1.05vw;
 }
