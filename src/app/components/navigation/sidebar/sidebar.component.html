@@ -1,4 +1,4 @@
-<header class="sn-header">
+<header class="sn-header" routerLink="/">
 	<h1 class="sn-brand">Joshua L Tucker</h1>
 	<div class="sn-logo-container">
 		<h1 class="center sn-initials">JT</h1>
@@ -8,8 +8,9 @@
 
 <div class="sn-item-area">
 	<div class="sn-buttons">
-		<sidenav-item class="sn-item" *ngFor="let item of navItems" [ngClass]="{'active-page': activeItem === item.id}" [navItem]="item"
-			(setActive)="updateActiveItem($event)"></sidenav-item>
+		<sidenav-item class="sn-item" *ngFor="let item of navItems" [ngClass]="{'active-page': activeItem === item.id}"
+			[navItem]="item" (setActive)="updateActiveItem($event)">
+		</sidenav-item>
 	</div>
 </div>
 

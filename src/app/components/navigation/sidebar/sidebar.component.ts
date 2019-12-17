@@ -21,13 +21,13 @@ export class SidebarComponent implements OnInit {
   activeItem: number;
 
   private navOptions: NavRouteItem[] = [
-    { text: 'Home', route: '', icon: 'home' },
-    { text: 'Technical & Code Related Skills', route: '', icon: 'code' },
-    { text: 'Teaching & Classroom Management', route: '', icon: 'supervisor_account' },
-    { text: 'EFA Curriculum & Classroom Resources', route: '', icon: 'speaker_notes' },
-    { text: 'Success Stories & Other Feedback', route: '', icon: 'done' },
-    { text: 'Contributions to Excellence', route: '', icon: 'highlight' },
-    { text: 'More About Me', route: '', icon: 'person' }
+    { text: 'Home', route: '/', icon: 'fas fa-home' },
+    { text: 'Technical & Code Related Skills', route: '', icon: 'fas fa-laptop-code' },
+    { text: 'Teaching & Classroom Management', route: '', icon: 'fas fa-chalkboard-teacher' },
+    { text: 'EFA Curriculum & Classroom Resources', route: '', icon: 'fas fa-book' },
+    { text: 'Success Stories & Other Feedback', route: '', icon: 'fas fa-user-graduate' },
+    { text: 'Contributions to Excellence', route: '', icon: 'far fa-lightbulb' },
+    { text: 'More About Me', route: '', icon: 'fas fa-user' }
   ];
 
   constructor() {
@@ -42,6 +42,5 @@ export class SidebarComponent implements OnInit {
 
   updateActiveItem(event: string) {
     this.activeItem = parseInt(event);
-    console.log(this.activeItem)
   }
 }
