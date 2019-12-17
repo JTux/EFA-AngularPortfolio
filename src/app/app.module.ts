@@ -7,6 +7,7 @@ import { SidebarComponent } from './components/navigation/sidebar/sidebar.compon
 import { SubtitleComponent } from './components/navigation/sidebar/subtitle/subtitle.component';
 import { NavItemComponent } from './components/navigation/sidebar/nav-item/nav-item.component';
 import { FooterComponent } from './components/navigation/sidebar/footer/footer.component';
+import { HomeComponent } from './components/pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FooterComponent } from './components/navigation/sidebar/footer/footer.c
     SidebarComponent,
     SubtitleComponent,
     NavItemComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
