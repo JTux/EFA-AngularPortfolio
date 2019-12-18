@@ -1,16 +1,17 @@
 .sn-header {
 	font-size: 1vw;
 	background-color: var(--primary-bg-color);
-	margin-bottom: .375em;
+	/* margin-bottom: .375em; */
 	color: white;
 	position: relative;
 	cursor: default;
 	border-bottom: solid 2px white;
+	padding: .15em;
 }
 
 .sn-brand {
 	text-align: center;
-	font-size: 1.75vw;
+	font-size: 1.35vw;
 	margin: .5em 0 0 0;
 }
 
@@ -28,6 +29,7 @@
 	align-content: stretch;
 	height: 100%;
 	color: var(--accent);
+	padding: .5em;
 }
 
 .sn-item {
@@ -61,6 +63,9 @@
 	.sn-header {
 		padding-top: 2.75em;
 		border: none;
+	}
+	.sn-buttons {
+		padding: 0;
 	}
 	.sn-logo-container {
 		height: 6vh;

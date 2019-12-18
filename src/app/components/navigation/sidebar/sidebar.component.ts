@@ -11,7 +11,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class SidebarComponent implements OnInit {
 
   subtitles: Subtitle[] = [
-    { text: 'Teacher' },
+    { text: 'Instructor' },
     { text: 'Problem Solver' },
     { text: 'Lifelong Student' },
     { text: '.NET Developer' },

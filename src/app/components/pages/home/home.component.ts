@@ -16,7 +16,9 @@ export class HomeComponent implements OnInit {
     { label: 'one', id: 'one' },
     { label: 'two', id: 'two' },
     { label: 'three', id: 'three' },
-    { label: 'four', id: 'four' }
+    { label: 'four', id: 'four' },
+    { label: 'five', id: 'five' },
+    { label: 'six', id: 'six' }
   ];
 
   constructor() { }

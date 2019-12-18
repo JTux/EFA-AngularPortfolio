@@ -10,6 +10,8 @@ export class HeaderComponent implements OnInit {
   title: string;
   sub: string;
 
+  @Input() arrowId: string;
+
   get headerText(): string {
     return this.title;
   }
