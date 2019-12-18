@@ -1,7 +1,6 @@
 .sn-header {
 	font-size: 1vw;
-	background-color: var(--primary-bg-color);
-	/* margin-bottom: .375em; */
+	background-color: var(--primary-text);
 	color: white;
 	position: relative;
 	cursor: default;

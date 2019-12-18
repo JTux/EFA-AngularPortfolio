@@ -18,5 +18,17 @@
 				</button>
 			</a>
 		</div>
+		<div class="center page-menu">
+			<button class="menu-select" [matMenuTriggerFor]="menu"><i class="fas fa-bars center menu-btn"></i></button>
+			<mat-menu #menu="matMenu">
+				<a class="menu-option" [attr.href]="'#' + option.id" *ngFor="let option of pageOptions">
+					<button class="page-option">
+						<span style="color: black;">
+							{{option.label.toUpperCase()}}
+						</span>
+					</button>
+				</a>
+			</mat-menu>
+		</div>
 	</div>
 </nav>

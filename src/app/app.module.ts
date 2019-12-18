@@ -13,6 +13,9 @@ import { NavbarComponent } from './components/navigation/navbar/navbar.component
 import { SectionComponent } from './components/pages/parts/section/section.component';
 import { PageFooterComponent } from './components/pages/parts/footer/footer.component';
 
+import { MatMenuModule } from '@angular/material/menu';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +31,9 @@ import { PageFooterComponent } from './components/pages/parts/footer/footer.comp
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatMenuModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
