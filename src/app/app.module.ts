@@ -11,6 +11,7 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { HeaderComponent } from './components/pages/parts/header/header.component';
 import { NavbarComponent } from './components/navigation/navbar/navbar.component';
 import { SectionComponent } from './components/pages/parts/section/section.component';
+import { PageFooterComponent } from './components/pages/parts/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SectionComponent } from './components/pages/parts/section/section.compo
     HomeComponent,
     HeaderComponent,
     NavbarComponent,
-    SectionComponent
+    SectionComponent,
+    PageFooterComponent
   ],
   imports: [
     BrowserModule,
