@@ -1,0 +1,21 @@
+.page-section {
+	padding: 3em 1.5em;
+	color: var(--primary-text);
+}
+
+.page-section hr {
+	width: 100%;
+	border-color: var(--primary-text);
+	border-style: solid;
+	border-top: none;
+}
+
+:host:nth-child(odd), :host:nth-child(odd) .page-section {
+	color: var(--accent);
+	/* background-color: var(--primary-light); */
+	background-color: #efefef;
+}
+
+:host:nth-child(odd) .page-section hr {
+	border-color: var(--accent);
+}

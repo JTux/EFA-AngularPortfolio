@@ -10,6 +10,7 @@ import { FooterComponent } from './components/navigation/sidebar/footer/footer.c
 import { HomeComponent } from './components/pages/home/home.component';
 import { HeaderComponent } from './components/pages/parts/header/header.component';
 import { NavbarComponent } from './components/navigation/navbar/navbar.component';
+import { SectionComponent } from './components/pages/parts/section/section.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NavbarComponent } from './components/navigation/navbar/navbar.component
     FooterComponent,
     HomeComponent,
     HeaderComponent,
-    NavbarComponent
+    NavbarComponent,
+    SectionComponent
   ],
   imports: [
     BrowserModule,

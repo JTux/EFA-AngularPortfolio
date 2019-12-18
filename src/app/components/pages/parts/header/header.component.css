@@ -20,7 +20,6 @@
 }
 
 .page-header hr {
-	width: 100%;
 	border-color: var(--accent-transparent);
 	border-style: solid;
 	border-top: none;
