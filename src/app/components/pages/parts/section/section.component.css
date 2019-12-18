@@ -1,21 +1,59 @@
 .page-section {
 	padding: 3em 1.5em;
+	position: relative;
+	color: var(--accent-text);
+	text-align: right;
+}
+
+.page-section h3 {
 	color: var(--primary-text);
 }
 
 .page-section hr {
 	width: 100%;
-	border-color: var(--primary-text);
+	border-color: var(--accent-text);
 	border-style: solid;
 	border-top: none;
 }
 
 :host:nth-child(odd), :host:nth-child(odd) .page-section {
 	color: var(--accent);
-	/* background-color: var(--primary-light); */
-	background-color: #efefef;
+	background-color: var(--light-grey);
+	text-align: left;
 }
 
 :host:nth-child(odd) .page-section hr {
 	border-color: var(--accent);
+}
+
+:host:nth-child(even) .page-section::before {
+	content: " ";
+	z-index: 1;
+	background-color: var(--light-grey);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0 20px 85vw;
+	border-color: transparent transparent white transparent;
+}
+
+:host:nth-child(even) .page-section::after {
+	content: " ";
+	z-index: 1;
+	background-color: var(--light-grey);
+	position: absolute;
+	bottom: -14px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 85vw 20px 0;
+	border-color: transparent white transparent transparent;
+}
+
+:host:nth-last-child(1) .page-section::after {
+	display: none;
 }

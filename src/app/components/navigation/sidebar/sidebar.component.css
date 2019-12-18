@@ -38,7 +38,7 @@
 }
 
 .active-page {
-	color: var(--primary-text);
+	color: var(--primary-bg-color);
 	text-decoration: underline;
 }
 
