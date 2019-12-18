@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavOption } from 'src/app/models/navOption';
 
 @Component({
   selector: 'app-home',
@@ -10,6 +11,13 @@ export class HomeComponent implements OnInit {
   pageTitle: string;
   pageSubtitle: string;
   headParagraphs: string[];
+
+  options: NavOption[] = [
+    { label: 'one', id: 'one' },
+    { label: 'two', id: 'two' },
+    { label: 'three', id: 'three' },
+    { label: 'four', id: 'four' }
+  ];
 
   constructor() { }
 

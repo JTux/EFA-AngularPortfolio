@@ -1,0 +1,21 @@
+<nav class="navbar">
+	<div class="nav-section nav-title-container">
+		<div class="brand-container">
+			<img src="../../../../assets/NavLogo.png" class="nav-brand nav-logo" />
+			<h3 class="nav-brand nav-title">
+				{{pageTitle.toUpperCase()}}
+			</h3>
+		</div>
+	</div>
+	<div class="nav-section nav-btns">
+		<div class="nav-options">
+			<a [attr.href]="'#' + option.id" *ngFor="let option of pageOptions">
+				<button class="page-option">
+					<span class="center">
+						{{option.label.toUpperCase()}}
+					</span>
+				</button>
+			</a>
+		</div>
+	</div>
+</nav>

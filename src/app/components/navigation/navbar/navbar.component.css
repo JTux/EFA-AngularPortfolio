@@ -1,0 +1,70 @@
+.navbar {
+	width: 100%;
+	background-color: var(--accent);
+	z-index: 1;
+	display: flex;
+	flex-direction: row;
+	height: 3.5em;
+}
+
+.nav-section {
+	position: relative;
+}
+
+.nav-title-container {
+	text-align: left;
+	flex: .25;
+}
+
+.nav-brand {
+	position: absolute;
+	top: 50%;
+	left: 5%;
+	transform: translate(0%, -50%);
+}
+
+.nav-logo {
+	width: 30px;
+	height: 30px;
+	margin-right: .5vw;
+	transition: all 200ms ease-out;
+}
+
+.nav-title {
+	font-weight: bold;
+	font-size: 13pt;
+	color: rgba(255, 255, 255, 0.85);
+	text-align: left;
+	margin: 0;
+	margin-left: 40px;
+}
+
+.nav-btns {
+	text-align: right;
+	flex: .75;
+}
+
+.nav-options {
+	position: absolute;
+	top: 50%;
+	right: 2%;
+	transform: translate(0%, -50%);
+}
+
+.page-option {
+	background-color: transparent;
+	position: relative;
+	border: none;
+	padding: .5em;
+	margin: 0 .5em;
+	height: 2.25em;
+	width: 5em;
+	color: #ffffff80;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 11pt;
+}
+
+.page-option:hover {
+	color: rgba(255, 255, 255, 0.75);
+}
