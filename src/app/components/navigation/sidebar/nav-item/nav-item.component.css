@@ -9,6 +9,8 @@
 	width: 90%;
 	position: relative;
 	font-size: 1.05vw;
+	line-height: 1.15vw;
+	padding-top: .4vw;
 }
 
 .nav-icon {

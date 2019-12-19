@@ -87,16 +87,16 @@
 }
 
 .menu-btn {
-	color: rgba(255, 255, 255, 0.85);
 	font-size: 1.8em;
+	color: rgba(255, 255, 255, 0.85);
 	border: solid 1px rgba(255, 255, 255, 0.35);
 	border-radius: 5px;
 	padding: .235em;
 }
 
 .menu-btn:hover, .menu-btn:active {
-	border-color: var(--accent);
 	color: white;
+	border-color: var(--accent);
 	background-color: var(--accent);
 }
 

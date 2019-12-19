@@ -28,7 +28,7 @@ export class SidebarComponent implements OnInit {
     { text: 'EFA Curriculum & Classroom Resources', route: '', icon: 'fas fa-book' },
     { text: 'Success Stories & Other Feedback', route: '', icon: 'fas fa-user-graduate' },
     { text: 'Contributions to Excellence', route: '', icon: 'far fa-lightbulb' },
-    { text: 'More About Me', route: '', icon: 'fas fa-user' }
+    { text: 'More About Me', route: '', icon: 'fas fa-user' },
   ];
 
   constructor(private router: Router) {
