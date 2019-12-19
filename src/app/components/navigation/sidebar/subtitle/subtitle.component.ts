@@ -14,6 +14,7 @@ export class SubtitleComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.subtitleArray.forEach((subtitle) => subtitle.text = subtitle.text.toUpperCase());
     this.shuffleArray(this.subtitleArray);
   }
 
