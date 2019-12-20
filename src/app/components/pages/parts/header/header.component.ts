@@ -30,8 +30,6 @@ export class HeaderComponent implements OnInit {
     this.sub = value.toUpperCase();
   }
 
-  @Input() paragraphs: string[];
-
   constructor() { }
 
   ngOnInit() {

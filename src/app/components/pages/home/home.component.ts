@@ -8,9 +8,8 @@ import { NavOption } from 'src/app/models/navOption';
 })
 export class HomeComponent implements OnInit {
 
-  pageTitle: string;
-  pageSubtitle: string;
-  headParagraphs: string[];
+  pageTitle: string = 'Page Title';
+  pageSubtitle: string = 'Page Subtitle';
 
   options: NavOption[] = [
     { label: 'one', id: 'one' },
@@ -24,18 +23,6 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.headParagraphs = this.setParagraphs();
-  }
-
-  private setParagraphs(): string[] {
-    this.pageTitle = 'Page Title';
-    this.pageSubtitle = 'Page Subtitle';
-
-    let textArray: string[] = [
-      'This is my first paragraph.',
-      'This should be the second one!'
-    ];
-    return textArray;
   }
 
 }

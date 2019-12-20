@@ -8,9 +8,8 @@ import { NavOption } from 'src/app/models/navOption';
 })
 export class AboutComponent implements OnInit {
 
-  pageTitle: string;
-  pageSubtitle: string;
-  headParagraphs: string[];
+  pageTitle: string = "About Me";
+  pageSubtitle: string = "";
 
   options: NavOption[] = [
     { label: 'one', id: 'one' },
@@ -24,17 +23,5 @@ export class AboutComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.headParagraphs = this.setParagraphs();
-  }
-
-  private setParagraphs(): string[] {
-    this.pageTitle = 'About Me';
-    this.pageSubtitle = "";
-
-    let textArray: string[] = [
-      'Learn more about me as an instructor, a developer, and as a person.',
-      'This should be the second one!'
-    ];
-    return textArray;
   }
 }
