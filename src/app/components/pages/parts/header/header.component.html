@@ -4,14 +4,16 @@
 		<h2>{{subtitle}}</h2>
 		<hr />
 	</div>
-	
+
 	<div class="page-description">
 		<p *ngFor="let text of paragraphs">{{text}}</p>
 	</div>
-	
+
 	<div class="nav-arrow">
-		<a [attr.href]="url + '#' + arrowId" class="down-arrow-link">
-			<span class="down-arrow"></span>
-		</a>
+		<page-link [id]="arrowId">
+			<div class="down-arrow-link">
+				<span class="down-arrow"></span>
+			</div>
+		</page-link>
 	</div>
 </header>

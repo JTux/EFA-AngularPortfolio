@@ -10,8 +10,6 @@ export class HeaderComponent implements OnInit {
   title: string;
   sub: string;
 
-  url: string;
-
   @Input() arrowId: string;
 
   get headerText(): string {
@@ -34,9 +32,7 @@ export class HeaderComponent implements OnInit {
 
   @Input() paragraphs: string[];
 
-  constructor() { 
-    this.url = window.location.href;
-  }
+  constructor() { }
 
   ngOnInit() {
   }

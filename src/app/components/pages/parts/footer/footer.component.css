@@ -30,6 +30,8 @@
 
 .footer-text {
 	margin-left: .35em;
+	color: rgba(239, 239, 239, 0.5);
+	text-decoration: none;
 }
 
 .footer-split {
