@@ -8,8 +8,8 @@ import { NavOption } from 'src/app/models/navOption';
 })
 export class HomeComponent implements OnInit {
 
-  pageTitle: string = 'Page Title';
-  pageSubtitle: string = 'Page Subtitle';
+  pageTitle: string = 'Tucker Portfolio';
+  pageSubtitle: string = '.NET Instructor';
 
   options: NavOption[] = [
     { label: 'one', id: 'one' },
