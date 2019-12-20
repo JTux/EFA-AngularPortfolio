@@ -17,6 +17,11 @@ import { MatMenuModule } from '@angular/material/menu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutComponent } from './components/pages/about/about.component';
 import { LinkComponent } from './components/pages/parts/link/link.component';
+import { CurriculumComponent } from './components/pages/curriculum/curriculum.component';
+import { FeedbackComponent } from './components/pages/feedback/feedback.component';
+import { ExperienceComponent } from './components/pages/experience/experience.component';
+import { TeachingComponent } from './components/pages/teaching/teaching.component';
+import { NotFoundComponent } from './components/pages/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +36,12 @@ import { LinkComponent } from './components/pages/parts/link/link.component';
     SectionComponent,
     PageFooterComponent,
     AboutComponent,
-    LinkComponent
+    LinkComponent,
+    CurriculumComponent,
+    FeedbackComponent,
+    ExperienceComponent,
+    TeachingComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

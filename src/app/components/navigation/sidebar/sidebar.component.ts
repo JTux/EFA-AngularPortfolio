@@ -23,12 +23,11 @@ export class SidebarComponent implements OnInit {
 
   private navOptions: NavRouteItem[] = [
     { text: 'Home', route: '/', icon: 'fas fa-home' },
-    { text: 'Technical & Code Related Skills', route: '', icon: 'fas fa-laptop-code' },
-    { text: 'Teaching & Classroom Management', route: '', icon: 'fas fa-chalkboard-teacher' },
-    { text: 'EFA Curriculum & Classroom Resources', route: '', icon: 'fas fa-book' },
-    { text: 'Success Stories & Other Feedback', route: '', icon: 'fas fa-user-graduate' },
-    { text: 'Contributions to Excellence', route: '', icon: 'far fa-lightbulb' },
-    { text: 'More About Me', route: '/about', icon: 'fas fa-user' },
+    { text: 'About Me', route: '/about', icon: 'fas fa-user' },
+    { text: 'Technical & Code Related Skills', route: '/experience', icon: 'fas fa-laptop-code' },
+    { text: 'Teaching & Classroom Management', route: '/teaching', icon: 'fas fa-chalkboard-teacher' },
+    { text: 'EFA Curriculum & Classroom Resources', route: '/curriculum', icon: 'fas fa-book' },
+    { text: 'Success Stories & Other Feedback', route: '/feedback', icon: 'fas fa-user-graduate' },
   ];
 
   constructor(private router: Router, private activeRoute: ActivatedRoute) {
