@@ -15,6 +15,7 @@ import { PageFooterComponent } from './components/pages/parts/footer/footer.comp
 
 import { MatMenuModule } from '@angular/material/menu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AboutComponent } from './components/pages/about/about.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HeaderComponent,
     NavbarComponent,
     SectionComponent,
-    PageFooterComponent
+    PageFooterComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

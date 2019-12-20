@@ -28,20 +28,21 @@ export class SidebarComponent implements OnInit {
     { text: 'EFA Curriculum & Classroom Resources', route: '', icon: 'fas fa-book' },
     { text: 'Success Stories & Other Feedback', route: '', icon: 'fas fa-user-graduate' },
     { text: 'Contributions to Excellence', route: '', icon: 'far fa-lightbulb' },
-    { text: 'More About Me', route: '', icon: 'fas fa-user' },
+    { text: 'More About Me', route: '/about', icon: 'fas fa-user' },
   ];
 
-  constructor(private router: Router) {
-    this.navOptions.forEach(routeItem => {
-      let itemCount = this.navItems.length;
-      itemCount = this.navItems.push({ id: itemCount + 1, text: routeItem.text, active: false, route: routeItem.route, icon: routeItem.icon });
-      if (routeItem.route == router.url) {
-        this.updateActiveItem(itemCount);
-      }
-    });
+  constructor(private router: Router, private activeRoute: ActivatedRoute) {
+
   }
 
   ngOnInit() {
+    this.navOptions.forEach(routeItem => {
+      let itemCount = this.navItems.length;
+      itemCount = this.navItems.push({ id: itemCount + 1, text: routeItem.text, active: false, route: routeItem.route, icon: routeItem.icon });
+      if (routeItem.route == window.location.href.substring(window.location.href.lastIndexOf('/'))) {
+        this.updateActiveItem(itemCount);
+      }
+    });
   }
 
   updateActiveItem(itemId: number) {
