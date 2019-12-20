@@ -39,7 +39,13 @@ export class SidebarComponent implements OnInit {
     this.navOptions.forEach(routeItem => {
       let itemCount = this.navItems.length;
       itemCount = this.navItems.push({ id: itemCount + 1, text: routeItem.text, active: false, route: routeItem.route, icon: routeItem.icon });
-      if (routeItem.route == window.location.href.substring(window.location.href.lastIndexOf('/'))) {
+      
+      let currentRoute = window.location.href.substring(window.location.href.lastIndexOf('/'));
+      if (currentRoute.substring(currentRoute.lastIndexOf('#')).length != 0) {
+        currentRoute = currentRoute.split('#')[0];
+      }
+
+      if (routeItem.route == currentRoute) {
         this.updateActiveItem(itemCount);
       }
     });

@@ -13,6 +13,9 @@ export class AppComponent {
   constructor() { }
   
   onActivate() {
-    this.scrollContent.nativeElement.scrollTop = 0;
+    let body = this.scrollContent.nativeElement;
+    body.style.scrollBehavior = 'auto';
+    body.scrollTop = 0;
+    body.style.scrollBehavior = 'smooth';
   }
 }
