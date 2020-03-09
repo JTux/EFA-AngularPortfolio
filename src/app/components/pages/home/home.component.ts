@@ -12,12 +12,11 @@ export class HomeComponent implements OnInit {
   pageSubtitle: string = '.NET Instructor';
 
   options: NavOption[] = [
-    { label: 'one', id: 'one' },
-    { label: 'two', id: 'two' },
-    { label: 'three', id: 'three' },
-    { label: 'four', id: 'four' },
-    { label: 'five', id: 'five' },
-    { label: 'six', id: 'six' }
+    { label: 'About', id: 'about' },
+    { label: 'Skills', id: 'skills' },
+    { label: 'Class', id: 'class' },
+    { label: 'Curriculum', id: 'curriculum' },
+    { label: 'Feedback', id: 'feedback' }
   ];
 
   constructor() { }

@@ -23,7 +23,7 @@
 			<mat-menu #menu="matMenu">
 				<page-link class="menu-option" [id]="option.id" *ngFor="let option of pageOptions">
 					<button class="page-option">
-						<span style="color: black;">
+						<span style="color: var(--primary-text);">
 							{{option.label.toUpperCase()}}
 						</span>
 					</button>

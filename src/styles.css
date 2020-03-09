@@ -13,6 +13,10 @@
 	-webkit-tap-highlight-color: transparent;
 }
 
+.mat-menu-panel {
+	box-shadow: none;
+}
+
 html {
 	scroll-behavior: smooth;
 }

@@ -3,6 +3,7 @@
 	height: 100%;
 	background-color: white;
 	cursor: pointer;
+	transition: .45s;
 }
 
 .sn-text {
