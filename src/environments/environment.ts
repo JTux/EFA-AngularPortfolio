@@ -3,7 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: window.location.hostname.includes('localhost:4200')
+  production: !window.location.hostname.includes('localhost:4200')
 };
 
 /*
