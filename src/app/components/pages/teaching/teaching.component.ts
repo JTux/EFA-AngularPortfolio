@@ -12,12 +12,10 @@ export class TeachingComponent implements OnInit {
   pageSubtitle: string = "";
 
   options: NavOption[] = [
-    { label: 'one', id: 'one' },
-    { label: 'two', id: 'two' },
-    { label: 'three', id: 'three' },
-    { label: 'four', id: 'four' },
-    { label: 'five', id: 'five' },
-    { label: 'six', id: 'six' }
+    { label: 'Interactive', id: 'interactive' },
+    { label: 'Learning', id: 'learning' },
+    { label: 'Humility', id: 'humility' },
+    { label: 'Reviews', id: 'reviews' }
   ];
 
   constructor() { }
