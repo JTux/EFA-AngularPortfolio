@@ -16,8 +16,7 @@ export class CurriculumComponent implements OnInit {
     { label: 'two', id: 'two' },
     { label: 'three', id: 'three' },
     { label: 'four', id: 'four' },
-    { label: 'five', id: 'five' },
-    { label: 'six', id: 'six' }
+    { label: 'five', id: 'five' }
   ];
   
   constructor() { }

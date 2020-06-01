@@ -1,10 +1,10 @@
-<page-header [arrowId]="'one'" [headerText]="pageTitle" [subtitle]="pageSubtitle">
+<page-header [arrowId]="'overview'" [headerText]="pageTitle" [subtitle]="pageSubtitle">
 	<p>Here you can learn a bit more about my success as an instructor as well as read some feedback given from former
 		students.</p>
 </page-header>
 <page-navbar [pageTitle]="pageTitle" [pageOptions]="options"></page-navbar>
 <section class="body-sections">
-	<page-section id="one" [sectionHeader]="'Success Stories'">
+	<page-section id="overview" [sectionHeader]="'Success Stories'">
 		<p>Having been around for a while now and having had my hands in a lot of cohorts, I have seen some incredible
 			students come through the program. I've also had the pleasure of teaching some of the people that would go
 			on to be some of our wonderful instructors. Below are just a few reviews left by former students and
@@ -16,7 +16,7 @@
 			It's been quite an amazing journey so far.
 		</p>
 	</page-section>
-	<page-section id="two" [sectionHeader]="'Coworker Feedback'">
+	<page-section id="colleagues" [sectionHeader]="'Coworker Feedback'">
 		<div class="review">
 			<p class="quote">Josh was my .NET instructor at Eleven Fifty Academy and part of the reason I am pursuing to
 				be an instructor there myself. His passion for learning is apparent the moment you meet him. I leave
@@ -29,8 +29,12 @@
 			</p>
 			<p class="speaker">- Amanda Knight, Software Development Instructor and Former Student</p>
 		</div>
+		<div class="review">
+			<p class="quote">I really like working with Josh, he is very clear with his instruction and the way he wants things done. Watching the way Josh interacts with his students is very fun to watch. He takes all of the questions in stride and know how to answer all of the questions. If he doesn't know how to answer them he is quick to look them up and get back to the students with answers. He is the best at giving people tasks and is very good at making sure we know how it needs to be done. If we aren't doing it correctly he doesn't make us feel bad, instead he guides us to the correct way and helps us learn it. All and all Josh is great instructor and a great co-worker.</p>
+			<p class="speaker">- Adam Wolanin, Software Development Instructor Trainee</p>
+		</div>
 	</page-section>
-	<page-section id="three" [sectionHeader]="'Student Feedback'">
+	<page-section id="student" [sectionHeader]="'Student Feedback'">
 		<div class="review">
 			<p class="quote">Josh was great, I trusted his knowledge, and his instructional style was very effective. He
 				took his time to walk through examples, and always made time for questions. He has a real knack for

@@ -12,9 +12,9 @@ export class FeedbackComponent implements OnInit {
   pageSubtitle: string = "";
 
   options: NavOption[] = [
-    { label: 'Overview', id: 'one' },
-    { label: 'Colleagues', id: 'two' },
-    { label: 'Student', id: 'three' }
+    { label: 'Overview', id: 'overview' },
+    { label: 'Colleagues', id: 'colleagues' },
+    { label: 'Student', id: 'student' }
   ];
   
   constructor() { }

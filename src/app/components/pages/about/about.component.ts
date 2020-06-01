@@ -14,11 +14,11 @@ export class AboutComponent implements OnInit {
   pageSubtitle: string = "";
 
   options: NavOption[] = [
-    { label: 'Greetings', id: 'one' },
-    { label: 'Creativity', id: 'two' },
-    { label: 'Childhood', id: 'three' },
-    { label: 'Schooling', id: 'four' },
-    { label: 'Interests', id: 'five' }
+    { label: 'Greetings', id: 'greetings' },
+    { label: 'Creativity', id: 'creativity' },
+    { label: 'Childhood', id: 'childhood' },
+    { label: 'Schooling', id: 'schooling' },
+    { label: 'Interests', id: 'interests' }
   ];
 
   constructor() { }
