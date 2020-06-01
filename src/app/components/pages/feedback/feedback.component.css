@@ -1,0 +1,23 @@
+.review {
+    position: relative;
+    margin: 2em 0;
+}
+
+.quote {
+    font-style: italic;
+    quotes: "“" "”" "‘" "’";
+}
+
+.quote::before {
+    content: open-quote;
+}
+
+.quote::after {
+    content: close-quote;
+}
+
+.speaker {
+    margin-left: 25px;
+    font-style: italic;
+    color: var(--primary-dark)
+}

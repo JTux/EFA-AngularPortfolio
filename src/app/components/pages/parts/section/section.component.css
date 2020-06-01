@@ -57,3 +57,23 @@
 :host:nth-last-child(1) .page-section::after {
 	display: none;
 }
+
+.section-content {
+	text-align: left;
+}
+
+:host:nth-child(odd) .section-content {
+	padding-right: 10%;
+}
+:host:nth-child(even) .section-content {
+	padding-left: 10%;
+}
+
+@media only screen and (max-width: 600px) {
+	:host:nth-child(odd) .section-content {
+		padding-right: 0%;
+	}
+	:host:nth-child(even) .section-content {
+		padding-left: 0%;
+	}
+}
