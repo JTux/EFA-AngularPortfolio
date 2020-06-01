@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     if (environment.production) {
-      if (location.protocol === 'http:') {
+      if (location.protocol === 'http:' && !window.location.href.includes('localhost')) {
         window.location.href = location.href.replace('http', 'https');
       }
     }

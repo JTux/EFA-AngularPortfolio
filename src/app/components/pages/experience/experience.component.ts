@@ -12,12 +12,10 @@ export class ExperienceComponent implements OnInit {
   pageSubtitle: string = "";
 
   options: NavOption[] = [
-    { label: 'one', id: 'one' },
-    { label: 'two', id: 'two' },
-    { label: 'three', id: 'three' },
-    { label: 'four', id: 'four' },
-    { label: 'five', id: 'five' },
-    { label: 'six', id: 'six' }
+    { label: 'Teaching', id: 'teaching' },
+    { label: 'Coding', id: 'coding' },
+    { label: 'Projects', id: 'projects' },
+    { label: 'Languages', id: 'languages' }
   ];
   
   constructor() { }
