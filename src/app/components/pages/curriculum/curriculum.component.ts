@@ -12,11 +12,11 @@ export class CurriculumComponent implements OnInit {
   pageSubtitle: string = "";
 
   options: NavOption[] = [
-    { label: 'one', id: 'one' },
-    { label: 'two', id: 'two' },
-    { label: 'three', id: 'three' },
-    { label: 'four', id: 'four' },
-    { label: 'five', id: 'five' }
+    { label: 'Curriculum', id: 'curriculum' },
+    { label: 'Canvas', id: 'canvas' },
+    { label: 'Courses', id: 'parttime' },
+    { label: 'Videos', id: 'videos' },
+    { label: 'Refactors', id: 'refactors' }
   ];
   
   constructor() { }
