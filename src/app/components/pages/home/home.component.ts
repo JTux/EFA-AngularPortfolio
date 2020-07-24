@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
 
   @Output() setPage = new EventEmitter();
 
-  pageTitle: string = 'Joshua Tucker EFA Portfolio';
+  pageTitle: string = 'Joshua Tucker Instructor Portfolio';
   pageSubtitle: string = 'Senior .NET Instructor';
 
   options: NavOption[] = [
