@@ -4,10 +4,7 @@ export interface NavRouteItem {
 	icon: string;
 }
 
-export interface SideNavItem {
+export interface SideNavItem extends NavRouteItem {
 	id: number;
-	text: string;
-	route: string;
-	icon: string;
 	active: boolean;
 }

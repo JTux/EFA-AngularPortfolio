@@ -22,6 +22,7 @@ import { FeedbackComponent } from './components/pages/feedback/feedback.componen
 import { ExperienceComponent } from './components/pages/experience/experience.component';
 import { TeachingComponent } from './components/pages/teaching/teaching.component';
 import { NotFoundComponent } from './components/pages/not-found/not-found.component';
+import { HyperlinkComponent } from './components/navigation/hyperlink/hyperlink.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { NotFoundComponent } from './components/pages/not-found/not-found.compon
     PageFooterComponent,
     AboutComponent,
     LinkComponent,
+    HyperlinkComponent,
     CurriculumComponent,
     FeedbackComponent,
     ExperienceComponent,
@@ -49,7 +51,7 @@ import { NotFoundComponent } from './components/pages/not-found/not-found.compon
     MatMenuModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [SidebarComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

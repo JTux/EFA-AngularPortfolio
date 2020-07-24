@@ -8,16 +8,19 @@ import { environment } from 'src/environments/environment';
 })
 export class AppComponent implements OnInit {
   title = 'TuckerEFAPortfolio';
+  activeId: 0;
 
   @ViewChild('bodyContent', { static: false }) scrollContent: ElementRef;
 
   constructor() { }
 
-  onActivate() {
+  onActivate(item: any) {
     let body = this.scrollContent.nativeElement;
     body.style.scrollBehavior = 'auto';
     body.scrollTop = 0;
     body.style.scrollBehavior = 'smooth';
+
+    console.log(item)
   }
 
   ngOnInit() {

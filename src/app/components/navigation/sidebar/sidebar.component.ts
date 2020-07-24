@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Subtitle } from 'src/app/models/subtitle';
 import { SideNavItem, NavRouteItem } from 'src/app/models/sideNavItem';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -10,6 +10,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class SidebarComponent implements OnInit {
 
+  @Input() activeItem: number;
+
   subtitles: Subtitle[] = [
     { text: 'Instructor' },
     { text: 'Problem Solver' },
@@ -19,7 +21,6 @@ export class SidebarComponent implements OnInit {
   ];
 
   navItems: SideNavItem[] = [];
-  activeItem: number;
 
   private navOptions: NavRouteItem[] = [
     { text: 'Home', route: '/', icon: 'fas fa-home' },
@@ -37,7 +38,7 @@ export class SidebarComponent implements OnInit {
   ngOnInit() {
     this.navOptions.forEach(routeItem => {
       let itemCount = this.navItems.length;
-      itemCount = this.navItems.push({ id: itemCount + 1, text: routeItem.text, active: false, route: routeItem.route, icon: routeItem.icon });
+      itemCount = this.navItems.push({ id: itemCount + 1, text: routeItem.text, active: this.activeItem === itemCount + 1, route: routeItem.route, icon: routeItem.icon });
       
       let currentRoute = window.location.href.substring(window.location.href.lastIndexOf('/'));
       if (currentRoute.substring(currentRoute.lastIndexOf('#')).length != 0) {
@@ -60,4 +61,10 @@ export class SidebarComponent implements OnInit {
       this.updateActiveItem(parseInt(itemId));
     });
   }
+
+  onActivate(item: any) {
+    this.activeItem = item.id;
+    console.log('work')
+  }
+
 }

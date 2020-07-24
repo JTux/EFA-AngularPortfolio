@@ -1,5 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { NavOption } from 'src/app/models/navOption';
+import { LinkItem } from 'src/app/models/linkItem';
+import { Router } from '@angular/router';
+import { SidebarComponent } from '../../navigation/sidebar/sidebar.component';
 
 @Component({
   selector: 'app-home',
@@ -8,8 +11,10 @@ import { NavOption } from 'src/app/models/navOption';
 })
 export class HomeComponent implements OnInit {
 
+  @Output() setPage = new EventEmitter();
+
   pageTitle: string = 'Joshua Tucker EFA Portfolio';
-  pageSubtitle: string = 'Staff Instructor';
+  pageSubtitle: string = 'Senior .NET Instructor';
 
   options: NavOption[] = [
     { label: 'About', id: 'about' },
@@ -19,9 +24,16 @@ export class HomeComponent implements OnInit {
     { label: 'Feedback', id: 'feedback' }
   ];
 
-  constructor() { }
+  aboutLinkItem: LinkItem = {id: 1, text: "Go To About", route: '/about'};
+
+  constructor(private router: Router, private sidebar: SidebarComponent) { }
 
   ngOnInit() {
+  }
+  setActiveItem(item: LinkItem) {
+    this.router.navigate([item.route]).then(() => {
+      this.sidebar.activeItem = item.id;
+    });
   }
 
 }

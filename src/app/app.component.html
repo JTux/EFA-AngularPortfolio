@@ -1,4 +1,4 @@
-<app-sidebar class="side-nav"></app-sidebar>
+<app-sidebar [activeItem]="activeId" class="side-nav"></app-sidebar>
 <div #bodyContent class="body-content" id="body">
-  <router-outlet (activate)="onActivate()"></router-outlet>
+  <router-outlet (activate)="onActivate($event)"></router-outlet>
 </div>
